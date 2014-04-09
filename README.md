@@ -1,0 +1,2 @@
+omniauth-coursera
+=================
