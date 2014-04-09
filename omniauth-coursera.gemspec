@@ -2,11 +2,11 @@
 require File.expand_path('../lib/omniauth-coursera/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Leo Romanovsky"]
-  gem.email         = ["leoromanovsky@gmail.com"]
+  gem.authors       = ['Leo Romanovsky']
+  gem.email         = ['leoromanovsky@gmail.com']
   gem.description   = %q{OmniAuth strategy for Coursera.}
   gem.summary       = %q{OmniAuth strategy for Coursera.}
-  gem.homepage      = "https://github.com/leoromanovsky/omniauth-coursera"
+  gem.homepage      = 'https://github.com/leoromanovsky/omniauth-coursera'
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "omniauth-coursera"
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::Coursera::VERSION
+  gem.license       = 'MIT'
 
   gem.add_dependency 'omniauth', '~> 1.0'
   gem.add_dependency 'omniauth-oauth2', '~> 1.1'
