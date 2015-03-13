@@ -31,7 +31,7 @@ module OmniAuth
 
       def raw_info
         access_token.options[:mode] = :query
-        @raw_info ||= access_token.get('https://api.coursera.org/api/externalBasicProfiles.v1?q=me').parsed
+        @raw_info ||= access_token.get('https://api.coursera.org/api/externalBasicProfiles.v1?q=me&fields=name').parsed
       end
     end
   end
